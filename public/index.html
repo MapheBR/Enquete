@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crie sua Enquete</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Crie sua Enquete</h1>
+
+    <div class="columns">
+      <section class="left">
+        <label for="question">Qual é a sua pergunta?</label>
+        <input id="question" placeholder="Ex: Qual sua cor favorita?" />
+
+        <label>Opções de Resposta</label>
+        <div id="options"></div>
+
+        <button id="addOpt" class="btn secondary">Adicionar Opção</button>
+        <button id="submit" class="btn primary">Criar Enquete</button>
+
+        <div id="msg" role="status"></div>
+      </section>
+
+      <aside id="polls-list" class="right">
+        <!-- lista de enquetes existentes e resultados serão renderizados aqui -->
+      </aside>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
